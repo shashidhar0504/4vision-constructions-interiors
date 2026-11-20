@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Replace YOUR-DOMAIN with your live domain before launch -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://YOUR-DOMAIN/</loc><priority>1.0</priority></url>
+  <url><loc>https://YOUR-DOMAIN/about</loc><priority>0.8</priority></url>
+  <url><loc>https://YOUR-DOMAIN/services</loc><priority>0.9</priority></url>
+  <url><loc>https://YOUR-DOMAIN/projects</loc><priority>0.9</priority></url>
+  <url><loc>https://YOUR-DOMAIN/packages</loc><priority>0.9</priority></url>
+  <url><loc>https://YOUR-DOMAIN/locations</loc><priority>0.8</priority></url>
+  <url><loc>https://YOUR-DOMAIN/contact</loc><priority>0.8</priority></url>
+  <url><loc>https://YOUR-DOMAIN/privacy</loc><priority>0.3</priority></url>
+  <url><loc>https://YOUR-DOMAIN/terms</loc><priority>0.3</priority></url>
+</urlset>

@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+  }
+  body {
+    @apply bg-brand-primary font-sans text-brand-cream antialiased overflow-x-hidden;
+  }
+  h1, h2, h3, h4 {
+    @apply font-serif text-brand-cream;
+  }
+  :focus-visible {
+    @apply outline-none ring-2 ring-brand-champagne ring-offset-2 ring-offset-brand-primary;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
+  }
+}
+
+@layer components {
+  .container-x {
+    @apply mx-auto w-full max-w-7xl px-5 sm:px-8 lg:px-10;
+  }
+  .section {
+    @apply py-20 md:py-28;
+  }
+  .eyebrow {
+    @apply text-xs font-medium uppercase tracking-[0.3em] text-brand-gold;
+  }
+  .title-xl {
+    @apply text-4xl font-semibold leading-tight sm:text-5xl lg:text-6xl;
+  }
+  .title-lg {
+    @apply text-3xl font-semibold leading-tight sm:text-4xl;
+  }
+  .btn-gold {
+    @apply inline-flex min-h-[44px] items-center justify-center gap-2 rounded-full bg-brand-gold px-6 py-3 text-sm font-semibold text-brand-primary transition duration-300 hover:bg-brand-champagne;
+  }
+  .btn-outline {
+    @apply inline-flex min-h-[44px] items-center justify-center gap-2 rounded-full border border-brand-gold/60 px-6 py-3 text-sm font-semibold text-brand-cream transition duration-300 hover:border-brand-gold hover:text-brand-gold;
+  }
+  .card {
+    @apply rounded-2xl border border-brand-gold/15 bg-brand-secondary/50 transition duration-500;
+  }
+  .field {
+    @apply w-full rounded-xl border border-brand-gold/20 bg-brand-primary/70 px-4 py-3 text-brand-cream placeholder:text-brand-cream/40 transition focus:border-brand-gold focus:outline-none;
+  }
+  .label {
+    @apply mb-2 block text-sm font-medium text-brand-champagne;
+  }
+}
